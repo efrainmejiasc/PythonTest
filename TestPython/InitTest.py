@@ -18,23 +18,10 @@ mydb = mysql.connector.connect(
 print (mydb)
 
 cnx = mysql.connector.connect(host='127.0.0.1',user='root',passwd='root', database='gig')
+cnxCursor = cnx.cursor()
+cnxCursor.execute("CREATE TABLE testpython (idTestPython INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(45) NULL, edad INT NULL, departamento VARCHAR(45) NULL,salario DOUBLE NULL,fecha DATE NULL")
 
 
-
-DB_NAME = 'gig'
-TABLES={}
-TABLES['gig']=(
-  " CREATE TABLE 'testpython' ("
-  " 'idTestPython' INT NOT NULL AUTO_INCREMENT,"
-  " 'nombre' VARCHAR(45) NULL,"
-  " 'edad' INT NULL,"
-  " 'departamento' VARCHAR(45) NULL,"
-  " 'salario' DOUBLE NULL,"
-  " 'fecha' DATE NULL,"
-  " PRIMARY KEY ('idTestPython')ENGINE=InnoDB")
-
-
-print(TABLES)
 
 
 
