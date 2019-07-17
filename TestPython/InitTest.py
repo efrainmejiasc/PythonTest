@@ -19,20 +19,22 @@ print (mydb)
 
 cnx = mysql.connector.connect(host='127.0.0.1',user='root',passwd='root', database='gig')
 
-DB_NAME = 'gig'
+
+
+DB_NAME = 'test'
 TABLES={}
 TABLES['testpython']=(
-"CREATE TABLE 'testpython' (2
+  "CREATE TABLE 'testpython' ("
   " 'idTestPython' INT NOT NULL AUTO_INCREMENT,"
   " 'nombre' VARCHAR(45) NULL,"
   " 'edad' INT NULL,"
   " 'departamento' VARCHAR(45) NULL,"
   " 'salario' DOUBLE NULL,"
   " 'fecha' DATE NULL,"
-  "PRIMARY KEY ('idTestPython') ENGINE=InnoDB")"
+  "PRIMARY KEY ('idTestPython')ENGINE=InnoDB")
 
 
-
+print(TABLES)
 
 
 
