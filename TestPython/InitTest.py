@@ -7,6 +7,17 @@ for x in range(numero,final):
 msg ="Efrain Mejias Castillo"
 print (msg)
 
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  passwd="root"
+)
+
+print (mydb)
+
+
 
 
 
