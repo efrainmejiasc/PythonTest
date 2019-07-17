@@ -17,6 +17,20 @@ mydb = mysql.connector.connect(
 
 print (mydb)
 
+cnx = mysql.connector.connect(host='127.0.0.1',user='root',passwd='root', database='gig')
+
+DB_NAME = 'gig'
+TABLES={}
+TABLES['testpython']=(
+"CREATE TABLE 'testpython' (2
+  " 'idTestPython' INT NOT NULL AUTO_INCREMENT,"
+  " 'nombre' VARCHAR(45) NULL,"
+  " 'edad' INT NULL,"
+  " 'departamento' VARCHAR(45) NULL,"
+  " 'salario' DOUBLE NULL,"
+  " 'fecha' DATE NULL,"
+  "PRIMARY KEY ('idTestPython') ENGINE=InnoDB")"
+
 
 
 
