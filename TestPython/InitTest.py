@@ -19,7 +19,8 @@ print (mydb)
 
 cnx = mysql.connector.connect(host='127.0.0.1',user='root',passwd='root', database='gig')
 cnxCursor = cnx.cursor()
-cnxCursor.execute("CREATE TABLE testpython (idTestPython INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(45) NULL, edad INT NULL, departamento VARCHAR(45) NULL,salario DOUBLE NULL,fecha DATE NULL")
+cnxCursor.execute("CREATE TABLE testpython (idTestPython AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(45) , edad INT , departamento VARCHAR(45) ,salario DOUBLE ,fecha DATE")
+
 
 
 
