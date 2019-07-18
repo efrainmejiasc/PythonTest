@@ -27,6 +27,7 @@ for tabla in cnxCursor:
     print(tabla)
 
 
+
 cnxCursor.close()
 
 
