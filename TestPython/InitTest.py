@@ -31,9 +31,9 @@ for tabla in cnxCursor:
 
 try:
   
-        sql = "INSERT INTO testpython ('name','apellido') VALUES (%s, %s, %s)"
+        sql = "INSERT INTO testpython ('name','apellido','edad') VALUES (%s, %s, %s)"
         try:
-            cnxCursor.execute(sql, ('efrain','mejias castillo'))
+            cnxCursor.execute(sql, ('juan','madrigal chirinos','47'))
             print("Task added successfully")
         except NameError:
             print(str(NameError))
